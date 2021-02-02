@@ -1,0 +1,73 @@
+:root {
+    /* background */
+    --c-dark: #1c1c1c ;
+    --c-light: #fff;
+    --c-accent: #ff2e5b;
+  
+    --c-dark-blue: #253045; 
+    --c-grey-blue: #4A5771;
+    --c-grey-light: #F1F2F2;
+    --c-grey: #BCC1D2;
+  
+    /* text */
+    --txt-c-dark: var(--c-dark);
+    --txt-c-grey: #4F5B70;
+    --txt-c-grey-light: var(--c-grey-light);
+    --txt-c-accent: var(--c-accent);
+    --txt-c-light: var(--c-light);
+
+   /* modals */
+   --modal-bgd-dark: rgba(20, 29, 45, 0.8);
+  
+    /* font */
+    --font-main: 'oswald', sans-serif;
+  
+    /* container width */
+    --vertical-scroll: 20px;
+    --mobile: calc(300px + var(--vertical-scroll));
+    --tablet: calc(640px + var(--vertical-scroll));
+    --desktop: calc(900px + var(--vertical-scroll));
+    --desktop-lg: calc(1270px + var(--vertical-scroll));
+  
+    /* animation */
+    --animation-fast: 0.1s;
+    --animation-slow: 0.3s;
+
+    --animation-transition: all 0.2s ease-in-out;
+  }
+
+@font-face {
+    font-family: 'oswald';
+    src: url('../fonts/oswald-bold-webfont.eot');
+    src: url('../fonts/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-bold-webfont.woff') format('woff'),
+         url('../fonts/oswald-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('../fonts/oswald-heavy-webfont.eot');
+    src: url('../fonts/oswald-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-heavy-webfont.woff') format('woff'),
+         url('../fonts/oswald-heavy-webfont.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald_regular';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+font-family: var(--font-main);
+box-sizing: border-box;
+display: grid;
+}
+.header{
+
+}
