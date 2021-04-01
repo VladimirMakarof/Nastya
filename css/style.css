@@ -39,11 +39,11 @@ html {
     box-sizing: border-box;
 }
 
-*,
+/* *,
 *::after,
 *::before {
     box-sizing: inherit;
-}
+} */
 
 a {
     text-decoration: none;
