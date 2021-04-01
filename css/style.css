@@ -38,13 +38,6 @@
 html {
     box-sizing: border-box;
 }
-
-/* *,
-*::after,
-*::before {
-    box-sizing: inherit;
-} */
-
 a {
     text-decoration: none;
     color: inherit;
@@ -54,7 +47,6 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: var(--c-light);
 }
-
 .container {
     max-width: 1652px;
     margin-left: auto;
