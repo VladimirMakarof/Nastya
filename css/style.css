@@ -82,23 +82,50 @@ body {
     
 }
 .header__title-section{
-margin-top: 200px;
-margin-left: 120px;
+
+margin-top: 300px;
 color: var(--c-light);
+margin-right: 230px;
 }
 .header__title-top{
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 54px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 70px;
     margin-bottom: 30px;
     min-width: 518px;
-    
 }
 .header__title-text{
-
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-style: 15px;
+line-height: 18px;
 }
-.top__contacts{
-    margin-top: 500px;
+.header__title-bottom{
+font-size: 29px;
+font-weight: 300;
+line-height: 35px;
+color: rgba(255, 255, 255, 0.8)
+}
+.header__top-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 67px;
+    width: 143px;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.header__phone{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.header__city{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
 }
 .header__white-block{
     background-color: var(--c-light);
@@ -110,7 +137,11 @@ color: var(--c-light);
     z-index: 1;
 }
 .header__title_top-right{
-    
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 220px;
 }
 .header__menu{
     width: 70%;
@@ -152,8 +183,9 @@ color: var(--c-light);
 .logo_name {
     text-align: left;
     color: #fefefe;
-    font-size: 36px;
-    line-height: 21px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 @media only screen and (min-width:640px) {}
