@@ -36,14 +36,11 @@
     --shadow-black: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-*{
-    box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 a {
     text-decoration: none;
     color: inherit;
 }
-
 body {
     font-family: 'Oswald', sans-serif;
     background-color: var(--c-light);
@@ -86,10 +83,9 @@ body {
     
 }
 .header__title-section{
-
-margin-top: 300px;
-color: var(--c-light);
-margin-right: 230px;
+    margin-top: 300px;
+    color: var(--c-light);
+    margin-right: 230px;
 }
 .header__title-top{
     font-weight: 400;
@@ -147,9 +143,7 @@ color: rgba(255, 255, 255, 0.8)
     margin-top: 100px;
     margin-left: 220px;
 }
-.header__menu{
-    width: 70%;
-}
+.header__menu{width: 70%;}
 .menu__list {
     display: flex;
     justify-content: right;
@@ -165,11 +159,7 @@ color: rgba(255, 255, 255, 0.8)
     z-index: 2;
     position: relative;
 }
-
-.menu__list-item {
-    margin: 0 15px;
-}
-
+.menu__list-item {margin: 0 15px;}
 .menu__list-link {
     color: #fefefe;
     font-size: 20px;
@@ -179,11 +169,7 @@ color: rgba(255, 255, 255, 0.8)
     transition: all .5s;
     border-bottom: 1px solid transparent;
 }
-
-.menu__list-link:hover {
-    border-bottom: 1px solid #fefefe;
-}
-
+.menu__list-link:hover {border-bottom: 1px solid #fefefe;}
 .logo_name {
     text-align: left;
     color: #fefefe;
@@ -192,12 +178,8 @@ color: rgba(255, 255, 255, 0.8)
     line-height: 30px;
 }
 /* bio__block */
-.bio{
-    margin-left: 40px;
-}
-.bio__block{
-    display: flex;
-}
+.bio{margin-left: 40px;}
+.bio__block{display: flex;}
 .title-top{
     margin-top: 120px;
     margin-bottom: 60px;
@@ -245,9 +227,7 @@ color: rgba(255, 255, 255, 0.8)
     display: flex;
     justify-content: space-between;
 }
-.services{
-    margin-top: 66px;
-}
+.services{margin-top: 66px;}
 .services_one{
     width: 500px;
     height: 150px;
@@ -262,9 +242,7 @@ color: rgba(255, 255, 255, 0.8)
     font-size: 40px;
     color: #fff;
 }
-.services_one:hover{
-    background-image: linear-gradient(to bottom, rgba(100, 101, 104, 0.52), rgba(106, 80, 175, 0.73)), url(../img/services_1.jpg);
-}
+.services_one:hover{background-image: linear-gradient(to bottom, rgba(100, 101, 104, 0.52), rgba(106, 80, 175, 0.73)), url(../img/services_1.jpg);}
 .services_two{
     display: inline-block;
     width: 500px;
@@ -282,9 +260,7 @@ color: rgba(255, 255, 255, 0.8)
     color: #fff;
 
 }
-.services_two:hover{
-    background-image: linear-gradient(to bottom, rgba(100, 101, 104, 0.52), rgba(106, 80, 175, 0.73)), url(../img/services_2.jpg);
-}
+.services_two:hover{background-image: linear-gradient(to bottom, rgba(100, 101, 104, 0.52), rgba(106, 80, 175, 0.73)), url(../img/services_2.jpg);}
 .services_tree{
     display: inline-block;
     width: 500px;
@@ -301,15 +277,9 @@ color: rgba(255, 255, 255, 0.8)
     font-size: 40px;
     color: #fff
 }
-.services_tree:hover{
-    background-image: linear-gradient(to bottom, rgba(100, 101, 104, 0.52), rgba(106, 80, 175, 0.73)), url(../img/services_3.jpg);
-}
-.services:last-child{
-    text-align: end;
-}
-.advice{
-margin-bottom: 80px;
-}
+.services_tree:hover{background-image: linear-gradient(to bottom, rgba(100, 101, 104, 0.52), rgba(106, 80, 175, 0.73)), url(../img/services_3.jpg);}
+.services:last-child{text-align: end;}
+.advice{margin-bottom: 80px;}
 .advice-h1{
     margin-bottom: 80px;
     font-weight: 400;
@@ -403,11 +373,6 @@ margin-bottom: 80px;
 .comment{
     background-color: #e9e9e9;
     min-height: 560px;
-    
-}
-.comment__main-block{
-    display: flex;
-    flex-direction: row;
 }
 .comment-h1{
     margin-bottom: 80px;
@@ -416,62 +381,97 @@ margin-bottom: 80px;
     line-height: 48px;
     color: var(--c-grey-text);
 }
-.comment-one{
-    background-image:  url(../img/comment_1.jpg);
-    width: 185px;
-    height: 185px;
-    display: inline-block;
-    background-size: cover;
+/* afsdfsfsdfsdfsd */
+.koguvcavis-varazdel {
+    padding: 38px 0;
+    background: ##F5F5F5;
+    color: #2f2f2f;
+    text-align: center;
+}
+.sestim-donials{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.sectionesag {
+  width: 195px;
+  height: 3px;
+  background: #498a2d;
+  margin: 23px auto;
+}
+
+.sagestim-lonials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vemotau-vokusipol{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: #f9f4f4;
+  padding: 28px;
+}
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */  
+    /* background-size: cover; */
     background-position: center;
-    position: absolute;
 }
-.comment-two{
-    background-image:  url(../img/comment_2.jpg);
-    width: 185px;
-    height: 185px;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-}
-.comment-first{
-    width: 625px;
-}
-.comment-number{
-    text-align: right;
-    color: #ff2e5b;
+.gecedanam{
     font-size: 20px;
-    font-weight: 700;
-    font-family: Montserrat, sans-serif;;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
-.comment-block{
-    position: relative;
-    left: 140px;
-    top: 45px;
-    padding-top: 30px;
-    padding-left: 30px;
-    z-index: 1;
+.apogered-gselected{
+  color: #53b32b;
+  margin-bottom: 20px;
+}
+
+/* footer */
+.footer-h1{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--c-grey-text);
+}
+.footer__section{
+    background-color: #e9e9e9;
+}
+.footer__list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.footer__list >li{
+    margin-right: 40px;
+    margin-bottom: 90px;
+}
+.sign_up-form{
     display: flex;
     flex-direction: column;
-    align-items: left;
-    width: 486px;
-    min-height: 175px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 290px;
+    width: 350px;
 }
-.comment-h2{
-    padding-bottom: 30px;
-    font-weight: 700;
-    font-size: 20px;
-    font-style: 24px;
-    color: #3452a3;
+@media screen and (max-width:960px) {
+.vemotau-vokusipol{
+  flex: 100%;
+  max-width: 80%;
 }
-.comment-p{
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 23px;
-    color:#878787;
-    padding-bottom: 30px;
 }
+
+@media screen and (max-width:600px) {
+.vemotau-vokusipol{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
 @media only screen and (min-width:640px) {}
