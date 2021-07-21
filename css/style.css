@@ -44,12 +44,15 @@ a {
 body {
     font-family: 'Oswald', sans-serif;
     background-color: var(--c-light);
+    
 }
 .main{
     max-width: 1270px;
+    margin: 0 auto;
+    
 }
 .container {
-    max-width: 1200px;
+    max-width: 1270px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -63,7 +66,7 @@ body {
     left: 0px;
     height: 88px;
     width: 100%;
-    background-color: var(--c-green);
+    background-color: var(--c-green); 
 }
 .header {
     /* background-image: url('../img/1.jpg');
@@ -81,6 +84,11 @@ body {
     min-height: 1000px;
     background-size: cover;
     
+}
+.header-about{
+    background-color: var(--c-green); 
+    width: 100%;
+    height: 90px;
 }
 .header__title-section{
     margin-top: 300px;
@@ -380,6 +388,7 @@ color: rgba(255, 255, 255, 0.8)
     font-size: 40px;
     line-height: 48px;
     color: var(--c-grey-text);
+    text-align: left;
 }
 /* afsdfsfsdfsdfsd */
 .koguvcavis-varazdel {
@@ -387,6 +396,7 @@ color: rgba(255, 255, 255, 0.8)
     background: ##F5F5F5;
     color: #2f2f2f;
     text-align: center;
+    align-items: stretch;
 }
 .sestim-donials{
   max-width: 1200px;
@@ -395,31 +405,29 @@ color: rgba(255, 255, 255, 0.8)
   padding: 0 20px;
 }
 
-.sectionesag {
-  width: 195px;
-  height: 3px;
-  background: #498a2d;
-  margin: 23px auto;
-}
 
 .sagestim-lonials{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
 }
 .vemotau-vokusipol{
   flex: 33.33%;
   max-width: 33.33%;
   box-sizing: border-box;
   padding: 15px;
+  
 }
 .testimonial {
   background: #f9f4f4;
   padding: 28px;
+  height: 100%;
 }
 .testimonial img{
     width: 100px;
     height: 100px;
+    
     /* border-radius: 50%; */  
     /* background-size: cover; */
     background-position: center;
@@ -444,22 +452,238 @@ color: rgba(255, 255, 255, 0.8)
 }
 .footer__section{
     background-color: #e9e9e9;
+    /* max-width: 1270px; */
 }
+
 .footer__list{
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
+
 .footer__list >li{
     margin-right: 40px;
     margin-bottom: 90px;
+}
+.footer__list >li:hover{
+    color: #ff2e5b;
 }
 .sign_up-form{
     display: flex;
     flex-direction: column;
     height: 290px;
     width: 350px;
+    margin-right: 60px;
+    margin-bottom: 100px;
 }
+.button{
+    background-color: #ff2e5b;
+    border: none;
+    color: #fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    margin: 4px 2px;
+    border-radius: 50px;
+    width: 200px;
+}
+.sign_up-input{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: 12px;
+    color: #3f3d4a;
+    width: 350px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sign_up-input:hover{
+    background: transparent;
+    border: 3px solid rgb(180, 180, 180);
+}
+.sign_up-block{
+    display: flex;
+    flex-direction: row;
+}
+.callback{
+    display: flex;
+    flex-direction: column;
+    
+}
+.callback-h3{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+.callback-p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 45px; 
+}
+.circle-icon {
+  background: #456BD9;
+  border: 0.1875em solid #0F1C3F;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 5em;
+  width: 5em;
+}
+
+.social__media-icons {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.7em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+.VkBtn{
+    background: #4060A5;
+}
+.VkBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+.InstagramBtn{
+    background: #4060A5;
+}
+.InstagramBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+.YoutubeBtn{
+    background: #4060A5;
+}
+.YoutubeBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+/* Стиль списка */
+ul.breadcrumb {
+    margin: 50px 0px 0px 0px;
+  padding: 10px 16px;
+  list-style: none;
+  /* background-color: #eee; */
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.about-p{
+font-family: Montserrat, sans-serif;
+font-weight: 400;
+font-size: 15px;
+line-height: 23px;
+color: rgba(44, 42, 53, 0.8);
+}
+.about-img{
+    float: left;
+    margin-right: 20px;
+}
+.about-h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #e04653;
+    text-align: center;
+}
+.about-p:last-child{
+    padding-bottom: 30px;
+}
+.diploma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.diploma-img{
+    width: 30%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width:960px) {
 .vemotau-vokusipol{
   flex: 100%;
