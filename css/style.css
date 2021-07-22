@@ -46,6 +46,21 @@ body {
     background-color: var(--c-light);
     
 }
+.mt-10{
+    margin-top: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pt-20{
+    padding-top: 20px;
+}
 .main{
     max-width: 1270px;
     margin: 0 auto;
@@ -88,7 +103,6 @@ body {
 .header-about{
     background-color: var(--c-green); 
     width: 100%;
-    height: 90px;
 }
 .header__title-section{
     margin-top: 300px;
@@ -155,6 +169,7 @@ color: rgba(255, 255, 255, 0.8)
 .menu__list {
     display: flex;
     justify-content: right;
+    overflow: hidden;
     padding: 30px 0 30px 20px;
     background: var(--c-green);
 }
@@ -683,6 +698,75 @@ color: rgba(44, 42, 53, 0.8);
     margin-right: 30px;
     margin-bottom: 30px;
 }
+/* ================================ */
+nav {
+  /* width: 660px; */
+  /* margin: 0 auto 30px; */
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  display: inline-block;
+  /* margin-right: 20px; */
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+a {
+  display: block;
+  /* padding: 10px 15px; */
+  text-decoration: none;
+  outline: none;
+  /* font-family: 'Lora', serif; */
+  transition: .5s linear;
+}
+.fa {
+  font-family: "FontAwesome";
+  color: inherit;
+  padding-left: 10px;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.four ul {
+  /* background: #FFD7A7; */
+}
+.four .submenu {
+  -webkit-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+  /* background: #FFAB51; */
+}
+.four ul li:hover .submenu {
+  -webkit-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+}
+.four ul a {
+  /* color: #9B4222; */
+}
+.submenu li a {
+  /* border-bottom: 1px solid rgba(255,255,255,.3);
+  color: white; */
+}
+
+/* ===================================== */
 
 @media screen and (max-width:960px) {
 .vemotau-vokusipol{
