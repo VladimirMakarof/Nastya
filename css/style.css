@@ -55,6 +55,12 @@ body {
 .mb-15{
     margin-bottom: 15px;
 }
+.mr-15{
+    margin-right: 15px;
+}
+.mr-25{
+    margin-right: 25px;
+}
 .pt-10{
     padding-top: 10px;
 }
@@ -68,6 +74,10 @@ body {
     max-width: 1270px;
     margin: 0 auto;
     
+}
+.main-contacts{
+    max-width: 1070px;
+    margin: 0 auto;
 }
 .container {
     max-width: 1270px;
@@ -701,8 +711,12 @@ color: rgba(44, 42, 53, 0.8);
     margin-right: 30px;
     margin-bottom: 30px;
 }
- .contacts{
-    width: 40%;
+.contacts-city{
+    border: 1px solid transparent;
+}
+.contacts-city:hover{
+    /* border: 1px solid ; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .section-contacts{
     margin-bottom: 40px;
@@ -730,7 +744,7 @@ color: rgba(44, 42, 53, 0.8);
 }
 .section-contacts{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .contacts-address-p{
     font-family: Montserrat, sans-serif;
