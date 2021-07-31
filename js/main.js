@@ -1,72 +1,67 @@
-// class ContactMap
-// {
-    
-//     click_map()
-//     {
-//         document.querySelector('.spb').onclick = function(){
-//             // Сокрытие блоков других карт
-//             document.getElementById('msk').style.display = "none";
-//             document.getElementById('kaz').style.display = "none";
-            
-//             //  Визуализация блока конкретной карты
-//             document.querySelector('#spb').style.display = "block";
-//         }
+class ContactMap {
 
-//         document.querySelector('.msk').onclick = function(){
+    click_map() {
+        document.querySelector('.spb').onclick = function () {
+            // Сокрытие блоков других карт
+            document.getElementById('msk').style.display = "none";
+            document.getElementById('kaz').style.display = "none";
 
-//             // Сокрытие блоков других карт
-//             document.getElementById('spb').style.display = "none";
-//             document.getElementById('kaz').style.display = "none";    
-//             //  Визуализация блока конкретной карты
-//             return document.querySelector('#msk').style.display = "block";
-//         }
+            //  Визуализация блока конкретной карты
+            document.querySelector('#spb').style.display = "block";
+        }
 
-//         document.querySelector('.kaz').onclick = function(){
+        document.querySelector('.msk').onclick = function () {
 
-//             // Сокрытие блоков других карт
-//             document.getElementById('msk').style.display = "none";
-//             document.getElementById('spb').style.display = "none";    
-//             //  Визуализация блока конкретной карты
-//             return document.querySelector('#kaz').style.display = "block";
-//         }
-//     }
+            // Сокрытие блоков других карт
+            document.getElementById('spb').style.display = "none";
+            document.getElementById('kaz').style.display = "none";
+            //  Визуализация блока конкретной карты
+            return document.querySelector('#msk').style.display = "block";
+        }
 
-//     app()
-//     {
+        document.querySelector('.kaz').onclick = function () {
 
-//         document.getElementById('spb').style.display = "none";
-//         document.getElementById('msk').style.display = "none";
-//         document.getElementById('kaz').style.display = "none";
+            // Сокрытие блоков других карт
+            document.getElementById('msk').style.display = "none";
+            document.getElementById('spb').style.display = "none";
+            //  Визуализация блока конкретной карты
+            return document.querySelector('#kaz').style.display = "block";
+        }
+    }
 
-//         if (document.getElementById('spb').style.display == "none"){
-//             document.getElementById('spb').style.display = "block";
-//         }
+    app() {
 
-//         return this.click_map();
+        document.getElementById('spb').style.display = "none";
+        document.getElementById('msk').style.display = "none";
+        document.getElementById('kaz').style.display = "none";
 
-//     }
-// }
+        if (document.getElementById('spb').style.display == "none") {
+            document.getElementById('spb').style.display = "block";
+        }
 
-// let app = new ContactMap();
-// app.app();
+        return this.click_map();
+
+    }
+}
+
+let app = new ContactMap();
+app.app();
 
 
-class Carousel
-{
-    app()
-    {
+class Carousel {
+    app() {
         let btn_right = document.getElementById('right');
         let btn_left = document.getElementById('left');
 
         let x = 0;
 
-        document.getElementById('right').onclick = function(){
-            
+        document.getElementById('right').onclick = function () {
+
             return 1;
         }
         console.log(+x);
 
-        document.getElementById('left').onclick = function(){
+        document.getElementById('left').onclick = function () {
             return console.log('321');
         }
     }
@@ -75,3 +70,17 @@ class Carousel
 let carousel_app = new Carousel();
 
 carousel_app.app();
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
+}
+window.onscroll = function () {
+    return false;
+}

@@ -40,10 +40,64 @@
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pages/kontakty.html">Контакты</a>
                             </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Войти</a>
+                            <li class="menu__list-item" class="button" data-toggle="modal" data-target="#login-modal">
+                                <!--  <a class="menu__list-link" href="#">Войти</a> -->
+                                <a class="menu__list-link"
+                                    onclick="document.getElementById('id01').style.display='block'">Войти</a>
                             </li>
                         </ul>
+
+                        <!-- form -->
+                        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+                            aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog">
+                                <div class="loginmodal-container">
+                                    <h1>Login to Your Account</h1><br>
+                                    <form>
+                                        <input type="text" name="user" placeholder="Username">
+                                        <input type="password" name="pass" placeholder="Password">
+                                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                    </form>
+
+                                    <div class="login-help">
+                                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">×</span>
+                                <!-- <img src="https://klike.net/uploads/posts/2019-03/medium/1551511784_4.jpg" alt="Avatar"
+                                    class="avatar"> -->
+                            </div>
+
+                            <div class="container-form">
+                                <label for="uname"><b>Имя пользователя</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Пароль</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button class="button" type="submit">Войти</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </label>
+                            </div>
+
+                            <!-- <div class="container-form" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Отмена</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div> -->
+                        </form>
+                    </div>
                     </nav>
 
                     <!-- <div class="user-nav">
@@ -68,6 +122,29 @@
                     <a class="header__phone" href="tel:+78142332211">+7(814)-233-22-11</a>
                 </div>
                 <h2 class="header__title_top-right">Наши занятия</h2>
+                <div class="header__lessons">
+                    <!-- <div class="header__lessons-arrow-block">
+                        <span class="dot"><i class="fas fa-arrow-up"></i></span>
+                        <span class="dot"><i class="fas fa-arrow-down"></i></span>
+                    </div> -->
+                    <div class="header__lessons-arrow-block">
+                        <div class="circle">
+                            <div class="dot mb-10"><i class="fas fa-arrow-up"></i></div>
+                            <div class="dot"><i class="fas fa-arrow-down"></i></div>
+                        </div>
+                    </div>
+                    <img class="header__lessons-img" src="img/lessons-1.jpg" alt="индивидуальное занятие">
+                    <div class="header__lessons-text">
+                        <h2 class="header__lessons-h2">Индивидуальное занятие</h2>
+                        <p class="header__lessons-p">Занятия логопеда с ребенком необходимы для того, чтобы развивать у
+                            ребенка лексически правильное оформление речи.</p>
+                        <div class="header__lessons-price-block">
+                            <p class="header__lessons-price">4000</p>
+                            <p class="header__lessons-price-rub">руб.</p>
+                        </div>
+                        <button class="button" type="submit">Записаться на занятие</button>
+                    </div>
+                </div>
             </div>
         </header>
         <main class="main">
@@ -107,8 +184,9 @@
                         <p class="advice__carousel-p">В каком возрасте ребенок должен начать произносить свои первые
                             слова? Что является нормой, а что отклонением? В каждой
                             семье разные ответы на эти вопросы. Одни, начинают бить тревогу, когда их чадо к году может
-                            сказать всего несколько
-                            слов.</p>
+                            сказать всего несколько слов. </p>
+                        <a class="bio__block-a " href="#">Продолжить </a>
+
                     </div>
                     <div class="advice__carousel">
                         <a class="advice__carousel-two" href="#">02</a>
@@ -116,6 +194,7 @@
                         <p class="advice__carousel-p">Некоторые родители не замечают, или не хотят замечать проблем с
                             речью, которые есть у их ребенка. Часто они просто не
                             задумываются и не знают, что в каком возрасте должны говорить их сын или дочь.</p>
+                        <a class="bio__block-a " href="#">Продолжить </a>
                     </div>
                     <div class="advice__carousel">
                         <a class="advice__carousel-tree" href="#">03</a>
@@ -123,6 +202,7 @@
                         <p class="advice__carousel-p">Школьная программа ориентирована на деток без дефектов и нарушений
                             речи и мышления. На практике подобные проблемы не так
                             редки, частота их появления растет.</p>
+                        <a class="bio__block-a " href="#">Продолжить </a>
                     </div>
                     <div class="advice__carousel">
                         <a class="advice__carousel-four" href="#">04</a>
@@ -130,6 +210,7 @@
                         <p class="advice__carousel-p">Достаточно распространено ошибочное мнение, что логопед – это
                             специалист, работающий исключительно с детьми.
                             Действительно, чаще всего его пациентами становятся те, кто только учится говорить.</p>
+                        <a class="bio__block-a " href="#">Продолжить </a>
                     </div>
                 </div>
             </section>
@@ -153,10 +234,12 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-
-                                <p>Здесь первое Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis impedit
+                                <p class="comment-p">!1Здесь первое Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Debitis impedit
                                     inventore tenetur? Saepe temporibus atque provident? Minus enim culpa non.Lorem
-                                    ipsum
+                                    ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus ut
+                                    fugit beatae, neque ipsa qui porro dignissimos aliquid harum praesentium iusto
+                                    consequuntur aspernatur a debitis, iste ducimus voluptatem quisquam.
                                     dolor sit amet consectetur adipisicing elit. Impedit,
                                     architecto. описание. Продолжение.</p>
                             </div>
@@ -173,7 +256,8 @@
                                     <i class="fas fa-star"></i>
                                 </div>
 
-                                <p>Здесь первое Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis impedit
+                                <p>!!!1Здесь первое Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                                    impedit
                                     inventore tenetur? Saepe temporibus atque provident? Minus enim culpa non.Lorem
                                     ipsum
                                     dolor sit amet consectetur adipisicing elit. Impedit,
@@ -296,28 +380,31 @@
 
                     <div class="panel_carousel">
                         <style>
-                            .sagestim-lonials{
+                            .sagestim-lonials {
                                 display: flex;
                                 flex-direction: row;
                                 flex-wrap: nowrap;
                                 overflow: hidden;
                             }
+
                             .testimonial img {
                                 width: 250px;
                             }
-                            .vemotau-vokusipol{
+
+                            .vemotau-vokusipol {
                                 width: 100%;
                             }
-                            .
-                            .panel_carousel span{
+
+                            . .panel_carousel span {
                                 font-size: 2em;
                             }
 
-                            .panel_carousel span:hover{
+                            .panel_carousel span:hover {
                                 cursor: pointer;
                             }
                         </style>
-                        <span id="left"><i class="fas fa-angle-left"></i></span> <span id="right"><i class="fas fa-angle-right"></i></span>
+                        <span id="left"><i class="fas fa-angle-left"></i></span> <span id="right"><i
+                                class="fas fa-angle-right"></i></span>
                     </div>
                 </div>
             </div>
